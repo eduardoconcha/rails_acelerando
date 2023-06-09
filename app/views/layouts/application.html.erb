@@ -8,9 +8,22 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <script src="https://kit.fontawesome.com/ae7d5358cc.js" crossorigin="anonymous"></script>
+    
+
   </head>
 
   <body>
     <%= yield %>
+
+
+
+
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'jquery.min' %>
+    <%= javascript_include_tag 'browser.min' %>
+    <%= javascript_include_tag 'breakpoints.min' %>
+    <%= javascript_include_tag 'main' %>
+
   </body>
 </html>
